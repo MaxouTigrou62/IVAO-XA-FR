@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>IVAO - International Virtual Aviation Organization</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://www.ivao.aero/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/bootstrap-ivao.css">
+  <link rel="stylesheet" href="./css/modif.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="./js/modif.js"></script>
+  <script src="./js/dateHeure.js"></script>
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container" style="display: flex;">
+      <div class="navbar-header" style="display: flex;">
+        <div class="col-xs-3">
+          <a href="#"><img src="./img/icone.svg" alt="Logo"></a>
+        </div>
+        <div class="col-sm-push-3" style="margin:auto auto;">
+          <h1 style="margin:auto auto;"> IVAO Division Nord Américaine</h1>
+        </div>
+      </div>
+      <button id="clock" type="button" class="btn btn-default btn-lg" onclick="changeHeure()" style="background-color:#eeeeee;color:#2a4982;">
+        <span id="date"></span>
+  </button>
+      <div class="collapse navbar-collapse" style="margin:auto;">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="https://www.ivao.aero/Login.aspx">CONNEXION</a>
+          </li>
+          <li>
+            <a href="https://www.ivao.aero/members/person/register.htm">INSCRIPTION</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- container -->
+  </nav>
+  <!-- navbar -->
+
+
+  <div class="container-fluid">
+    <div class="row content">
+      <div class="col-sm-2 sidenav">
+        <h4>IVAO</h4>
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="#section1">Accueil</a></li>
+          <li data-toggle="collapse" data-target="#d0"><a href="#section2">Contrôleurs</a></li>
+          <div id="d0" class="collapse">
+              <button type="button" style="width:100%;" class="btn btn-success">Pour bien commencer</button>
+              <button type="button" style="width:100%;" class="btn btn-success">Vol VFR</button>
+              <button type="button" style="width:100%;" class="btn btn-success">Vol SpeedBird</button>
+          </div>
+          <li data-toggle="collapse" data-target="#d1"><a href="#section3">Pilotes</a></li>
+          <div id="d1" class="collapse">
+              <button type="button" style="width:100%;" class="btn btn-success">Pour bien commencer</button>
+              <button type="button" style="width:100%;" class="btn btn-success">Vol VFR</button>
+              <button type="button" style="width:100%;" class="btn btn-success">Vol SpeedBird</button>
+          </div>
+          <li data-toggle="collapse" data-target="#d2"><a href="#section3">Communauté</a></li>
+          <div id="d2" class="collapse">
+              <button type="button" style="width:100%;" class="btn btn-success">Vol NordShuttle</button>
+              <button type="button" style="width:100%;" class="btn btn-success">Vol VFR</button>
+              <button type="button" style="width:100%;" class="btn btn-success">Vol SpeedBird</button>
+          </div>
+          <li data-toggle="collapse" data-target="#d3"><a href="#section4">Événements</a></li>
+          <div id="d3" class="collapse">
+              <button type="button" style="width:100%;" class="btn btn-success">Vol NordShuttle</button>
+              <button type="button" style="width:100%;" class="btn btn-success">Vol VFR</button>
+              <button type="button" style="width:100%;" class="btn btn-success">Vol SpeedBird</button>
+          </div>
+          <li data-toggle="collapse" data-target="#d4"><a href="#section5">Ressources</a></li>
+          <div id="d4" class="collapse">
+              <button type="button" style="width:100%;" class="btn btn-success">Vol NordShuttle</button>
+              <button type="button" style="width:100%;" class="btn btn-success">Vol VFR</button>
+              <button type="button" style="width:100%;" class="btn btn-success">Vol SpeedBird</button>
+          </div>
+          <li data-toggle="collapse"><a href="#section6">Contact</a></li>
+        </ul>
+        <br>
+      </div>
+
+      <div class="col-sm-10">
+        <div id="myCarousel" class="carousel slide" data-interval="false" data-ride="carousel" style="height:300px;">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div style="height:100%;" class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="./img/banner.jpg" alt="Image">
+              <div class="carousel-caption">
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="./img/avion1.jpg" alt="Image">
+              <div class="carousel-caption">
+              </div>
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        <div>
+          <h3>What We Do</h3>
+          <br>
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+              <p>Current Project</p>
+            </div>
+            <div class="col-sm-4">
+              <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+              <p>Project 2</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="well">
+                <p>Some text..</p>
+              </div>
+              <div class="well">
+                <p>Some text..</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container-fluid text-center">
+    <p>Footer Text</p>
+  </footer>
+  <script>
+$(".container-fluid").on('click', 'ul', function (elem) {
+  	if ($(".in").attr("id")!=null){
+  		$(".in").collapse("hide");
+  	}
+  });
+  </script>
+</body>
+
+</html>

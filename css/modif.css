@@ -162,7 +162,10 @@ footer {
 }
 
 .nav .btn-default{
-  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+    font-size: 12px;
   padding-top:3px;
   padding-bottom: 3px;
   width:100%;
